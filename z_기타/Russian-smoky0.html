@@ -1,0 +1,684 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" rel="stylesheet" />
+<link href="https://olensglobal.com/data/olens_data/templet/o_lens/css/library/swiper.min.css" rel="stylesheet" />
+<style type="text/css">#russian_01,
+  #russian_02,
+  #russian_03,
+  #russian_04 {
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .aftercss:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .incontainer {
+    max-width: 750px;
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+  }
+
+  .imgbackarea {
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+  .imgbackarea>img {
+    width: 100%;
+  }
+
+  .r_img {
+    position: absolute;
+  }
+
+  #russian_01 .incontainer,
+  #russian_02 .incontainer,
+  #russian_03 .incontainer,
+  #russian_04 .incontainer,
+  #russian_05 .incontainer,
+  #russian_06 .incontainer,
+  #russian_08 .incontainer,
+  #russian_09 .incontainer,
+  #russian_10 .incontainer,
+  #russian_11 .incontainer,
+  #russian_12 .incontainer,
+  #russian_13 .incontainer {
+    overflow: hidden
+  }
+
+  #russian_01 .r_img img,
+  #russian_02 .r_img img,
+  #russian_03 .r_img img,
+  #russian_04 .r_img img,
+  #russian_05 .r_img img,
+  #russian_06 .r_img img,
+  #russian_07 .r_img img,
+  #russian_08 .r_img img,
+  #russian_09 .r_img img,
+  #russian_10 .r_img img,
+  #russian_11 .r_img img,
+  #russian_12 .r_img img,
+  #russian_13 .r_img img {
+    width: 100%;
+  }
+
+  .slidearea {
+    position: relative;
+    padding: 0px;
+    box-sizing: border-box
+  }
+
+
+
+
+  #russian_01 .r_img01 {
+    width: 100%;
+    left: 0px;
+    top: 0px
+  }
+
+  #russian_01 .r_img06 {
+    width: 37%;
+    left: 13%;
+    bottom: 2.4%;
+  }
+
+  #russian_01 .r_img07 {
+    width: 37%;
+    right: 13%;
+    bottom: 2.4%
+  }
+
+
+
+
+
+  #russian_02 .r_img01 {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+  #russian_03 .r_img01 {
+    width: 30.333%;
+    left: 0%;
+    top: 0%;
+  }
+
+  #russian_04 .r_img01 {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+  #russian_04 .r_img02 {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+  #russian_04 .r_img03 {
+    width: 100%;
+    height: 36.066%;
+    left: 0px;
+    top: 44%;
+  }
+
+  #russian_05 .r_img01 {
+    width: 100%;
+    right: 0px;
+    top: 0%;
+  }
+
+  #russian_06 .r_img01 {
+    width: 100%;
+    left: 0px;
+    top: 0px
+  }
+
+  #russian_07 .r_img01 {
+    width: 100%;
+    left: 0px;
+    top: 10.5%;
+  }
+
+
+  #russian_08 .r_img01 {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+  #russian_08 .r_img02 {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+  #russian_08 .r_img03 {
+    width: 100%;
+    left: 0px;
+    top: 37.5%;
+  }
+
+  #russian_08 .r_img04 {
+    width: 100%;
+    left: 0px;
+    bottom: 0px
+  }
+
+  #russian_09 .r_img01 {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+  #russian_09 .r_img02 {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+  #russian_09 .r_img03 {
+    width: 100%;
+    height: 36.066%;
+    left: 0px;
+    top: 44%;
+  }
+
+  #russian_10 .r_img01 {
+    width: 100%;
+    left: 0px;
+    top: 10.5%;
+  }
+
+  #russian_11 .r_img01 {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+  #russian_12 .r_img01 {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+
+  @-webkit-keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3)
+    }
+
+    50% {
+      opacity: 1
+    }
+  }
+
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3)
+    }
+
+    50% {
+      opacity: 1
+    }
+  }
+
+  .zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn
+  }
+
+  @-webkit-keyframes bounceIn {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+      animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3)
+    }
+
+    20% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1)
+    }
+
+    40% {
+      -webkit-transform: scale3d(.9, .9, .9);
+      transform: scale3d(.9, .9, .9)
+    }
+
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      transform: scale3d(1.03, 1.03, 1.03)
+    }
+
+    80% {
+      -webkit-transform: scale3d(.97, .97, .97);
+      transform: scale3d(.97, .97, .97)
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1)
+    }
+  }
+
+  @keyframes bounceIn {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+      animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3)
+    }
+
+    20% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1)
+    }
+
+    40% {
+      -webkit-transform: scale3d(.9, .9, .9);
+      transform: scale3d(.9, .9, .9)
+    }
+
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      transform: scale3d(1.03, 1.03, 1.03)
+    }
+
+    80% {
+      -webkit-transform: scale3d(.97, .97, .97);
+      transform: scale3d(.97, .97, .97)
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1)
+    }
+  }
+
+  .bounceIn {
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s;
+    -webkit-animation-duration: calc(var(--animate-duration)*0.75);
+    animation-duration: calc(var(--animate-duration)*0.75);
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn
+  }
+
+
+
+
+  .swiper-button-next.swiper-button-black {
+    );
+    background-size: cover;
+  }
+
+  .swiper-button-prev.swiper-button-black {
+    );
+    background-size: cover;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 5% !important;
+    height: 4.21% !important;
+  }
+
+  .swiper-pagination {
+    width: 100%;
+    top: 1.5%;
+    position: absolute;
+    z-index: 4;
+  }
+
+  .og_pag {
+    width: 100%;
+    position: absolute;
+    bottom: -6.0%;
+  }
+
+  .og_pag .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #b2b2b2;
+    opacity: 50;
+    border:0px;
+  }
+
+  .og_pag .swiper-pagination-bullet-active {
+    background: #000;
+    border:0px;
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0px 0.5%;
+    border:0px;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 30.3333%;
+    height: 3px;
+    display: inline-block;
+    border-radius: 0%;
+    background: #fff;
+    border:0px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+
+  /*// bar-pagination //*/
+
+
+  .itemlistwrap {
+    width: 100%;
+    max-width: 750px;
+    margin: 0px auto;
+  }
+
+  .itemlistwrap img {
+    width: 100%;
+  }
+.yu_01 {
+position: relative;
+padding-bottom: 56.25%; /* 16:9 비율인 경우 */
+/* padding-bottom값은 4:3 비율인 경우 75%로 설정합니다 */
+padding-top: 25px;
+height: 0;
+}
+
+.yu_01 iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+</style>
+<div class="content_wrap">
+<div class="og_section_01" id="russian_01">
+<div class="incontainer">
+<div class="imgbackarea"><img src="https://images.poplens.jp/event/2021/event_20210413/01-bg.jpg" />
+<div class="r_img r_img01 zoomIn animated" style="animation-duration:1s;"><img src="https://images.poplens.jp/event/2021/event_20210413/01-main-cut.png" /></div>
+
+<div class="r_img r_img01 bounceIn animated" style="animation-duration:2s; animation-delay:0.3s;"><img src="https://images.poplens.jp/event/2021/event_20210413/01-tag.png" /></div>
+
+<div class="r_img r_img01 fadeIn animated" style="animation-duration:3s;"><img src="https://images.poplens.jp/event/2021/event_20210413/01-title.png" /></div>
+
+<div class="r_img r_img01 fadeIn animated" style="animation-duration:4s; animation-delay:0.3s;"><img src="https://images.poplens.jp/event/2021/event_20210413/maximize-exotic-shade-and-feel-empowered.png" /></div>
+
+<div class="r_img r_img01 og_animation bounceIn animated" style="animation-duration:5s; animation-delay:0.9s;"><img src="https://images.poplens.jp/event/2021/event_20210413/01-popup.png" /> <a class="r_img r_img06" href="https://olensglobal.com/member/login.php" target="_blank"><img src="https://images.poplens.jp/event/2021/event_20210413/btn_sign_up.png" /></a> <a class="r_img r_img07" href="https://olensglobal.com/mypage/coupon.php" target="_blank"><img src="https://images.poplens.jp/event/2021/event_20210413/btn_coupon.png" /></a></div>
+</div>
+</div>
+</div>
+
+<div class="og_section_02" id="russian_02" style="padding-top:3%">
+<div class="incontainer">
+<div class="imgbackarea" style="background:#fff"><img src="https://images.poplens.jp/event/2021/event_20210413/02-bg.png" />
+<div class="r_img r_img01 og_animation">
+<div class="slidearea">
+<div class="swipeslide__slide swiper-container swipenormal">
+<div class="swiper-wrapper">
+<div class="swiper-slide animated"><img alt="" class="og_img_re" src="https://images.poplens.jp/event/2021/event_20210413/02_slide_gray.png" /></div>
+
+<div class="swiper-slide animated"><img alt="" class="og_img_re" src="https://images.poplens.jp/event/2021/event_20210413/02_slide_brown.png" /></div>
+
+<div class="swiper-slide animated"><img alt="" class="og_img_re" src="https://images.poplens.jp/event/2021/event_20210413/02_slide_olive.png" /></div>
+</div>
+</div>
+
+<div class="swiper-pagination">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="og_section_03" id="russian_03">
+<div class="incontainer">
+<div class="imgbackarea" style="background:#fff"><img src="https://images.poplens.jp/event/2021/event_20210413/02-tag-bg.png" />
+<div class="r_img r_img01 og_animation slideInRight animated" style="animation-duration:2s; left:3%;"><a href="#r_gray"><img src="https://images.poplens.jp/event/2021/event_20210413/02-tag-gray.png" /></a></div>
+
+<div class="r_img r_img01 og_animation slideInRight animated" style="animation-duration:2s; left: 35.333%;"><a href="#r_brown"><img src="https://images.poplens.jp/event/2021/event_20210413/02-tag-brown.png" /></a></div>
+
+<div class="r_img r_img01 og_animation slideInRight animated" style="animation-duration:2s; left: 67.55%;"><a href="#r_olive"><img src="https://images.poplens.jp/event/2021/event_20210413/02-tag-olive.png" /></a></div>
+</div>
+</div>
+</div>
+
+<div class="og_section_04" id="russian_04" style="padding-top:3%">
+<div class="incontainer">
+<div class="imgbackarea" style="background:#fff"><img src="https://images.poplens.jp/event/2021/event_20210413/03-bg.jpg" />
+<div class="r_img r_img01 og_animation fadeInBottomLeft animated" style="animation-duration:1s"><img src="https://images.poplens.jp/event/2021/event_20210413/03-main-cut.png" /></div>
+
+<div class="r_img r_img02 og_animation flipInX animated" style="animation-duration:1.5s; animation-delay:0.7s"><a name="r_gray"><img src="https://images.poplens.jp/event/2021/event_20210413/03-slide-01-tag.png" /></a></div>
+</div>
+</div>
+</div>
+
+<div class="og_section_05" id="russian_05" style="padding-top:1.5%">
+<div class="incontainer">
+<div class="imgbackarea" style="background:#fff"><img src="https://images.poplens.jp/event/2021/event_20210413/04-bg.png" />
+<div class="r_img r_img01 og_animation fadeInLeft animated">
+<div class="slidearea">
+<div class="swipeslide__slide swiper-container swipenormal2">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><img alt="" class="og_img_re" src="https://images.poplens.jp/event/2021/event_20210413/-e-03_slide_01_model.png" /></div>
+
+<div class="swiper-slide"><img alt="" class="og_img_re" src="https://images.poplens.jp/event/2021/event_20210413/-e-03_slide_02_model.png" /></div>
+
+<div class="swiper-slide"><img alt="" class="og_img_re" src="https://images.poplens.jp/event/2021/event_20210413/-e-03_slide_03_model.png" /></div>
+</div>
+</div>
+
+<div class="swiper-pagination2 og_pag peg_type2">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="og_section_06" id="russian_06">
+<div class="incontainer">
+<div class="imgbackarea" style="background:#fff"><a href="https://olensglobal.com/shop/goods_view.php?id=0000000836" target="_blank"><img src="https://images.poplens.jp/event/2021/event_20210413/05-bg.png" style="width:100%;" /></a></div>
+</div>
+</div>
+
+<div class="og_section_07" id="russian_07" style="padding-top:3%">
+<div class="incontainer">
+<div class="imgbackarea" style="background:#fff"><a name="r_brown"><img src="https://images.poplens.jp/event/2021/event_20210413/06-bg.png" style="width:100%;" /></a>
+
+<div class="r_img r_img01 og_animation fadeInRight animated">
+<div class="slidearea">
+<div class="swipeslide__slide swiper-container swipenormal3">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><img alt="" class="og_img_re" src="https://images.poplens.jp/event/2021/event_20210413/-e-04_slide_01_model.png" /></div>
+
+<div class="swiper-slide"><img alt="" class="og_img_re" src="https://images.poplens.jp/event/2021/event_20210413/-e-04_slide_02_model.png" /></div>
+
+<div class="swiper-slide"><img alt="" class="og_img_re" src="https://images.poplens.jp/event/2021/event_20210413/-e-04_slide_03_model.png" /></div>
+</div>
+</div>
+
+<div class="swiper-pagination3 og_pag peg_type2">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="og_section_08" id="russian_08">
+<div class="incontainer">
+<div class="imgbackarea" style="background:#fff"><a href="https://olensglobal.com/shop/goods_view.php?id=0000000835" target="_blank"><img src="https://images.poplens.jp/event/2021/event_20210413/07-bg.png" style="width:100%;" /></a></div>
+</div>
+</div>
+
+<div class="og_section_09" id="russian_09">
+<div class="incontainer">
+<div class="imgbackarea"><img src="https://images.poplens.jp/event/2021/event_20210413/08-bg.jpg" />
+<div class="r_img r_img01 og_animation fadeInUp animated" style="animation-duration:1s;"><img src="https://images.poplens.jp/event/2021/event_20210413/og_brown_1.png" /></div>
+
+<div class="r_img r_img01 og_animation fadeInUp animated" style="animation-duration:2s; animation-delay:0.4s;"><img src="https://images.poplens.jp/event/2021/event_20210413/og_brown_2.png" /></div>
+</div>
+</div>
+</div>
+
+<div class="og_section_10" id="russian_10" style="padding-top:10%">
+<div class="incontainer">
+<div class="imgbackarea" style="background:#fff"><a name="r_olive"><img src="https://images.poplens.jp/event/2021/event_20210413/06-bg.png" style="width:100%;" /></a>
+
+<div class="r_img r_img01 og_animation fadeInUp animated">
+<div class="slidearea">
+<div class="swipeslide__slide swiper-container swipenormal4">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><img alt="" class="og_img_re" src="https://images.poplens.jp/event/2021/event_20210413/-e-05_slide_01_model.png" /></div>
+
+<div class="swiper-slide"><img alt="" class="og_img_re" src="https://images.poplens.jp/event/2021/event_20210413/-e-05_slide_02_model.png" /></div>
+</div>
+</div>
+
+<div class="swiper-pagination4 og_pag peg_type2">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="og_section_11" id="russian_11">
+<div class="incontainer">
+<div class="imgbackarea" style="background:#fff"><a href="https://olensglobal.com/shop/goods_view.php?id=0000000834" target="_blank"><img src="https://images.poplens.jp/event/2021/event_20210413/09-bg.png" style="width:100%;" /></a></div>
+</div>
+</div>
+
+<div class="og_section_12" id="russian_12">
+<div class="incontainer">
+<div class="imgbackarea"><img src="https://images.poplens.jp/event/2021/event_20210413/09-bg.jpg" />
+<div class="r_img r_img01 og_animation fadeInUp animated" style="animation-duration:1s;"><img src="https://images.poplens.jp/event/2021/event_20210413/og_olive_1.png" /></div>
+
+<div class="r_img r_img01 og_animation flipInX animated" style="animation-duration:1s;"><img src="https://images.poplens.jp/event/2021/event_20210413/og_olive_3.png" /></div>
+
+<div class="r_img r_img01 og_animation flash animated" style="animation-duration:2s; animation-delay:0.4s;"><img src="https://images.poplens.jp/event/2021/event_20210413/og_olive_2.png" /></div>
+</div>
+<!-- 유투브 영상 로드 -->
+
+<div class="r_y yu_01 og_animation flipInX animated" style="animation-duration:2s;animation-delay:0.4s;"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="421.875" src="https://www.youtube.com/embed/4zf9GFDn9Q4" title="YouTube video player" width="750"></iframe></div>
+<script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script><script>
+  //스크롤반응, 에니메이트
+  wow = new WOW({
+    boxClass: 'og_animation',
+    animateClass: 'animated',
+    offset: 100,
+    callback: function(box) {
+      console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+    }
+  });
+  wow.init();
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script><script>
+  //swiper slider
+  var default_slide = new Swiper('.swiper-container.swipenormal', {
+
+    slidesPerView: 1,
+    pagination: { // 페이징 설정
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    //루프 기능
+    loop: true,
+
+    //자동으로 슬라이드
+    autoplay: {
+      delay: 1500
+    },
+  });
+</script><script>
+  //swiper slider
+  var default_slide = new Swiper('.swiper-container.swipenormal2', {
+    slidesPerView: 1,
+    pagination: { // 페이징 설정
+      el: '.swiper-pagination2',
+      clickable: true,
+    },
+
+    //루프 기능
+    loop: true,
+
+    //자동으로 슬라이드
+    autoplay: {
+      delay: 2000
+    },
+  });
+</script><script>
+  //swiper slider
+  var default_slide = new Swiper('.swiper-container.swipenormal3', {
+    slidesPerView: 1,
+    pagination: { // 페이징 설정
+      el: '.swiper-pagination3',
+      clickable: true,
+    },
+
+    //루프 기능
+    loop: true,
+
+    //자동으로 슬라이드
+    autoplay: {
+      delay: 2000
+    },
+  });
+</script><script>
+  //swiper slider
+  var default_slide = new Swiper('.swiper-container.swipenormal4', {
+    slidesPerView: 1,
+    pagination: { // 페이징 설정
+      el: '.swiper-pagination4',
+      clickable: true,
+    },
+
+    //루프 기능
+    loop: true,
+
+    //자동으로 슬라이드
+    autoplay: {
+      delay: 2000
+    },
+  });
+</script></div>
+</div>
+</div>

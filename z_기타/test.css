@@ -1,0 +1,22 @@
+body, div, a {margin:0;padding:0;}
+img {width:100%;}
+.og_size {}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-top img {
+  height: 100%;
+  width: 100%;
+  max-width:1080px;
+  max-height:1090px;
+}
