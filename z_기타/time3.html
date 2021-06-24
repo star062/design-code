@@ -1,0 +1,104 @@
+<div id="countdown" style="text-align: center;">&nbsp;</div>
+<style type="text/css">#countdown {
+  font-size: 20px;
+  font-weight: 100;
+  color: 000;
+}
+#countdown div {
+  display: inline-block;
+  min-width: 90px;
+}
+#countdown div span {
+  color: #000;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+</style>
+
+<script>
+var EVENTDAY = 1; // monday
+var EVENTHOUR = 22; //
+var EVENTMINUTE = 42; //
+
+function getRemaining( now )
+{
+    if ( now == null ) now = new Date();
+
+    var dow = now.getDay();
+    // the "hour" for now must include fractional parts of the hour, so...
+    var hour = now.getHours() + now.getMinutes()/60 + now.getSeconds()/3600;
+
+    // how many days from current day until event day?
+    var offset = EVENTDAY - dow;
+
+    // if event day is past *OR* if today is the event day but the event time is past...
+    if ( offset < 0 || ( offset == 0 && EVENTHOUR < hour ) )
+    {
+        // we are past the event time in current week, so
+        // target EVENTDAY is next week:
+        offset += 7;
+    }
+
+    // so this date (day of the month) is the next occurrence of the event:
+    var eventDate = now.getDate() + offset;
+
+    // and so then next occurrence of the event is at this time:
+    var eventTime = new Date( now.getFullYear(), now.getMonth(), eventDate,
+                              EVENTHOUR, EVENTMINUTE, 0 );
+
+    // this is how many milliseconds from now to the next event occurrence
+    var millis = eventTime.getTime() - now.getTime();
+
+    // convert milliseconds to days/hours/minutes/seconds:
+    var seconds = Math.round( millis / 1000 );
+    var minutes = Math.floor( seconds / 60 );
+    seconds %= 60;
+    var hours = Math.floor( minutes / 60);
+    minutes %= 60;
+    var days = Math.floor( hours / 24 );
+    hours %= 24;
+    if ( seconds < 10 ) seconds = "0" + seconds;
+    if ( minutes < 10 ) minutes = "0" + minutes;
+    if ( hours < 10 ) hours = "0" + hours;
+    if ( days == 1 ) {
+	days = days + " day, ";
+    }
+    else {
+	days = days + " days, ";
+    }
+    // and return that formatted pretty:
+    return days + hours + ":" + minutes + ":" + seconds;
+
+}
+
+function tick()
+{
+    // this is the automatic once a second display:
+    document.getElementById("countdown").innerHTML =
+      '<div>' + cdDay + '<span>days</span></div>' +
+      '<div>' + cdHours + '<span>hours</span></div>' +
+      '<div>' + cdMins + '<span>minutes</span></div>' +
+      '<div>' + cdSecs + '<span>seconds</span></div>' ;
+}
+setInterval( 'getRemaining()', 1000 ); // specifies once a second
+
+// here is a demo that allows you to test the function
+// by specifying a date and time in the <form> below
+function demo( form )
+{
+    var t = form.theDate.value.split("/");
+    var mn = Number(t[0]);
+    var dy = Number(t[1]);
+    var yr = Number(t[2]);
+    var t = form.theTime.value.split(":");
+    var hr = Number(t[0]);
+    var mi = Number(t[1]);
+    var sc = Number(t[2]);
+    // so this is the test date/time that you specified:
+    var test = new Date( yr, mn-1, dy, hr, mi, sc );
+
+    // and here we call the master function and put its answer in the <form>:
+    form.remaining.value = getRemaining( test );
+}
+</script>

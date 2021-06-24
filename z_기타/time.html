@@ -1,0 +1,43 @@
+<div id="timer" style="text-align: center;">&nbsp;</div>
+<style type="text/css">#timer {
+  font-size: 20px;
+  font-weight: 100;
+  color: 000;
+}
+#timer div {
+  display: inline-block;
+  min-width: 90px;
+}
+#timer div span {
+  color: #000;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+</style>
+<script>
+function updateTimer() {
+  future  = Date.parse('6 23, 2021 10:00:00');
+  now     = new Date();
+  diff    = future - now;
+
+  days  = Math.floor( diff / (1000*60*60*24) );
+  hours = Math.floor( diff / (1000*60*60) );
+  mins  = Math.floor( diff / (1000*60) );
+  secs  = Math.floor( diff / 1000 );
+
+  cdDay = days;
+  cdHours = hours - days  * 24;
+  cdMins = mins  - hours * 60;
+  cdSecs = secs  - mins  * 60;
+
+  document.getElementById('timer')
+    .innerHTML =
+      '<div>' + cdDay + '<span>days</span></div>' +
+      '<div>' + cdHours + '<span>hours</span></div>' +
+      '<div>' + cdMins + '<span>minutes</span></div>' +
+      '<div>' + cdSecs + '<span>seconds</span></div>' ;
+}
+setInterval('updateTimer()', 1000 );
+
+</script>
