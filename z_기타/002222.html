@@ -1,0 +1,80 @@
+<link href="https://fonts.googleapis.com" rel="preconnect" />
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;family=Fredericka+the+Great&amp;family=Roboto+Mono:wght@700&amp;display=swap" rel="stylesheet" />
+<style type="text/css">.og_count{width:100%; margin:0 auto; text-align:center; position:relative; font-family: 'Fredericka the Great', cursive; }
+  .og_count .h1 {font-size:5rem;}
+  .og_countdown {width:100%; font-family: 'Fredericka the Great', cursive; font-size:10rem; margin:0 auto; position:relative;}
+  #countdown_timer {width:100%; font-family: 'Fredericka the Great', cursive; font-size:10rem; margin:0 auto; position:relative;}
+</style>
+<div class="og_count">
+<h1>OLENS COUNTDOWN</h1>
+
+<div id="countdown_timer">&nbsp;</div>
+</div>
+<script>
+    var countDownDate = new Date('Jun 24, 2021 13:56:00').getTime();
+    var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+     if (days < '10') { days = '0' + days; }
+     if (hours < '10') { hours = '0' + hours; }
+     if (minutes < '10') { minutes = '0' + minutes; }
+     if (seconds < '10') { seconds = '0' + seconds; }
+
+    document.getElementById('countdown_timer').innerHTML = days + ':' + hours + ':' +
+      minutes + ':' + seconds + '';
+
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById('countdown_timer').innerHTML = '<div>The event has ended</div>';
+    }
+  }, 1000);
+</script>
+
+////////////////////
+<link href="https://fonts.googleapis.com" rel="preconnect" />
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;family=Fredericka+the+Great&amp;family=Roboto+Mono:wght@700&amp;display=swap" rel="stylesheet" />
+<style type="text/css">.og_count{width:100%; margin:0 auto; text-align:center; position:relative; font-family: 'Fredericka the Great', cursive; }
+  .og_count .h1 {font-size:5rem;}
+  .og_countdown {width:100%; font-family: 'Fredericka the Great', cursive; font-size:10rem; margin:0 auto; position:relative;}
+  #countdown_timer {width:100%; font-family: 'Fredericka the Great', cursive; font-size:10rem; margin:0 auto; position:relative;}
+</style>
+<div class="og_count">
+<h1>OLENS COUNTDOWN</h1>
+
+<div id="countdown_timer">&nbsp;</div>
+</div>
+<script>
+    var countDownDate = new Date('Jun 24, 2021 18:05:00 UTC+9').getTime();
+    var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+     if (days < '10') { days = '0' + days; }
+     if (hours < '10') { hours = '0' + hours; }
+     if (minutes < '10') { minutes = '0' + minutes; }
+     if (seconds < '10') { seconds = '0' + seconds; }
+
+    document.getElementById('countdown_timer').innerHTML = days + ':' + hours + ':' +
+      minutes + ':' + seconds + '';
+
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById('countdown_timer').innerHTML = '<div>The event has ended</div>';
+    }
+  }, 1000);
+</script>
